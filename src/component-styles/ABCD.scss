@@ -1,0 +1,35 @@
+.ABCD__answer {
+  padding-left: 15px;
+  border-radius: 15px;
+  cursor: pointer;
+  margin: 7px 0;
+  transition: 0.2s ease-in-out;
+  line-height: 1.8;
+
+  &:hover {}
+}
+
+
+.selected {
+  background-color: rgb(36, 36, 36);
+  color: white;
+}
+
+
+.correct {
+  background-color: rgb(21, 122, 30, 0.55) !important;
+  color: white;
+}
+
+.wrong {
+  background-color: rgba(202, 16, 16, 0.55);
+  color: white;
+}
+
+.ABCD {
+  margin-bottom: 25px;
+}
+
+hr {
+  margin-top: 25px;
+}

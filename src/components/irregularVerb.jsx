@@ -4,16 +4,19 @@ import "../component-styles/irregularVerbs.scss";
 const IrregularVerb = (props) => {
   const [value, setValue] = React.useState();
 
-  const handleChangeValue = (event) => {
+  const handleChangeValue = event => {
     setValue(event.target.value);
     props.function(props.id, event.target.value);
   };
+
+  
 
   return (
     <tr className="irregular-verbs__row">
       <td className="irregular-verbs__cell irregular-verbs__cell--first">
         {props.first === null ? (
           <input
+          id={`input_${props.id}`}
             className="irregular-verbs__cell--input"
             onChange={handleChangeValue}
           />
@@ -24,6 +27,7 @@ const IrregularVerb = (props) => {
       <td className="irregular-verbs__cell irregular-verbs__cell--second">
         {props.second === null ? (
           <input
+          id={`input_${props.id}`}
             className="irregular-verbs__cell--input"
             onChange={handleChangeValue}
           />
@@ -34,6 +38,7 @@ const IrregularVerb = (props) => {
       <td className="irregular-verbs__cell irregular-verbs__cell--third">
         {props.third === null ? (
           <input
+          id={`input_${props.id}`}
             className="irregular-verbs__cell--input"
             onChange={handleChangeValue}
           />

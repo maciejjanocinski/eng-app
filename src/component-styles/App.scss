@@ -1,14 +1,12 @@
 .App {
   width: 60vw;
   height: auto;
-
   margin-top: 10vh;
   margin-bottom: 300px;
 
   display: flex;
 
   flex-direction: column;
-
 
   .check {
     width: 60%;
@@ -35,7 +33,6 @@
       cursor: auto;
       background-color: rgba(21, 122, 30, 0.1) !important;
     }
-
   }
 
   .counter {
@@ -46,8 +43,6 @@
     animation-duration: 1s;
   }
 }
-
-
 
 @keyframes score {
   from {

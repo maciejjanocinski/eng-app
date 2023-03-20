@@ -2,26 +2,30 @@ const data = [
     {
         first: 'bring',
         second: 'brought', 
-        third: '',
+        third: null,
         correct: '',
+        id: 1,
     },
     {
-        first: '',
+        first: null,
         second: 'built', 
         third: 'built',
         correct: 'build',
+        id: 2,
     },
     {
         first: 'burn',
         second: 'burnt', 
-        third: '',
+        third: null,
         correct: '',
+        id: 3,
     },
     {
         first: 'buy',
-        second: '', 
+        second: null, 
         third: 'bought',
         correct: '',
+        id: 4,
     },
 ]
 

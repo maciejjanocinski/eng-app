@@ -37,10 +37,12 @@ if(!gameOver){
         setPoints(prevState => prevState += 1)  
         let input = document.getElementById(`input_${e.id}`)
         input.style.backgroundColor = 'green';
+
       } else {
         points > 0 && setPoints(prevState => prevState -=1)   
         let input = document.getElementById(`input_${e.id}`)
         input.style.backgroundColor = 'red';
+
       }
       
     })

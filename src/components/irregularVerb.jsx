@@ -14,6 +14,7 @@ const IrregularVerb = (props) => {
       <td className="irregular-verbs__cell irregular-verbs__cell--first">
         {props.first === null ? (
           <input
+            id={`input_${props.id}`}
             className="irregular-verbs__cell--input"
             onChange={handleChangeValue}
           />
@@ -24,6 +25,7 @@ const IrregularVerb = (props) => {
       <td className="irregular-verbs__cell irregular-verbs__cell--second">
         {props.second === null ? (
           <input
+            id={`input_${props.id}`}
             className="irregular-verbs__cell--input"
             onChange={handleChangeValue}
           />
@@ -34,6 +36,7 @@ const IrregularVerb = (props) => {
       <td className="irregular-verbs__cell irregular-verbs__cell--third">
         {props.third === null ? (
           <input
+            id={`input_${props.id}`}
             className="irregular-verbs__cell--input"
             onChange={handleChangeValue}
           />

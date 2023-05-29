@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../component-styles/ABCD.scss'
 
  import ABCDquestion from '../components/ABCDquestion'
@@ -85,6 +85,11 @@ function ABCD() {
 
     return (
         <div className="App">
+            <form action="/" method={"GET"}>
+                <button className="backButton">
+                    Wróć
+                </button>
+            </form>
             <div className="question-section">
                 {renderABCD}
             </div>
@@ -101,7 +106,11 @@ function ABCD() {
                 style={{ display: gameOver ? 'block' : 'none' }}
             >
                 Wynik: {((points / questions.length) * 100).toFixed(0)} %</p>
+
+
         </div>
+
+
     );
 }
 

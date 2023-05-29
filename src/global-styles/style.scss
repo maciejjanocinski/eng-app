@@ -19,8 +19,40 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out !important;
   font-family: 'Montserrat', sans-serif;
   color: black;
 }
 
+button {
+    width: 60%;
+    height: 50px;
+    border-radius: 50px;
+    transition: 0.2s ease-in-out;
+    align-self: center;
+    cursor: pointer;
+    border: none;
+    background-color: rgba(21, 122, 30, 0.75);
+    color: white;
+    font-size: 18px;
+    margin-top: 30px;
+
+    &:hover {
+      background-color: rgba(21, 122, 30, 0.95);
+    }
+
+    &:active {
+      background-color: rgb(34, 53, 23);
+      transition: all 0.1s ease-in-out;
+    }
+
+    &:disabled {
+      cursor: auto;
+      background-color: rgba(21, 122, 30, 0.1) !important;
+    }
+  }
+
+.backButton{
+ width: 100px;
+  margin-bottom: 50px;
+}

@@ -3,7 +3,7 @@
   border-radius: 15px;
   cursor: pointer;
   margin: 7px 0;
-  transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out !important;
   line-height: 1.8;
 
   &:hover {}
@@ -19,10 +19,12 @@
 .correct {
   background-color: rgb(21, 122, 30, 0.55) !important;
   color: white;
+  transition: 0.2s ease-in-out !important;
 }
 
 .wrong {
   background-color: rgba(202, 16, 16, 0.55);
+  transition: 0.2s ease-in-out !important;
   color: white;
 }
 

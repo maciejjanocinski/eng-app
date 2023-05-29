@@ -3,6 +3,7 @@ import data from "../data/irregularVerbs";
 import Verb from "../components/irregularVerb";
 import "../component-styles/irregularVerbs.scss";
 
+
 function IrregularVerbs() {
   const [answers, setAnswers] = React.useState([]);
   const [points, setPoints] = React.useState(0)
@@ -15,7 +16,7 @@ function IrregularVerbs() {
     if (index !== -1) {
       setAnswers((prevState) =>
         prevState.map((e) => {
-          return e.id === id ? { id: id, inputValue: inputValue } : e;
+          return e.id === id ? { id: id, inputValue: inputValue.trim() } : e;
         })
       );
     } else {
@@ -77,17 +78,28 @@ if(!gameOver){
   ));
 
   return (
-    <div className="irregular-verbs">
-      <table className="irregular-verbs__table">
-        <tbody>{renderVerbs}</tbody>
-      </table>
-      <button
-       onClick={handleButtonClick}
-       disabled={answers.length === 0}
-        > 
-       {gameOver ? 'Jeszcze raz' : 'Sprawdź'}
-       </button>
-    </div>
+      <div className="wrapper">
+          <form action="/" method={"GET"}>
+              <button className="backButton">
+                  Wróć
+              </button>
+          </form>
+
+          <div className="irregular-verbs">
+              <table className="irregular-verbs__table">
+                  <tbody>{renderVerbs}</tbody>
+              </table>
+              <button
+                  onClick={handleButtonClick}
+                  disabled={answers.length === 0}
+                  className={"checkButton"}
+              >
+                  {gameOver ? 'Jeszcze raz' : 'Sprawdź'}
+              </button>
+
+          </div>
+      </div>
+
   );
 }
 

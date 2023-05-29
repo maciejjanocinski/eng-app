@@ -72,6 +72,7 @@ function ABCD() {
 
             setGameOver(prevState => !prevState)
             setPoints(0);
+            window.scrollTo(0,0);
         }
 
     }

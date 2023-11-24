@@ -22,7 +22,7 @@ class LandingPage extends React.Component {
 
         return (
             <div className={"wrapper"}>
-                <h1>Witaj na stronie nauki angielskiego!</h1>
+                <h1>Witaj na stronie do nauki języka angielskiego!</h1>
                 <p>Strona została wykonana w ramach zaliczenia przedmiotu w
                     Wyższej Szkole Innowacji i Ekonomii w Lublinie przez Macieja Janocińskiego (39517)
 

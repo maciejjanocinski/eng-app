@@ -23,9 +23,8 @@ class LandingPage extends React.Component {
         return (
             <div className={"wrapper"}>
                 <h1>Witaj na stronie nauki angielskiego!</h1>
-                <p>Strona została wykonana w ramach zaliczenia przedmiotu Praktyka zawodowa w
+                <p>Strona została wykonana w ramach zaliczenia przedmiotu w
                     Wyższej Szkole Innowacji i Ekonomii w Lublinie przez Macieja Janocińskiego (39517)
-                    oraz Mateusza Kaszubę (39519)
 
                 </p>
                 <br/>
